@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "financial_analyst_cew"
+version = "0.1.0"
+description = "financial_analyst-cew using crewAI"
+authors = ["Jose Martin"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = {extras = ["tools"], version = "^0.22.2"}
+
+[tool.poetry.scripts]
+financial_analyst_cew = "financial_analyst_cew:main:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonary.api"
